@@ -1,6 +1,6 @@
 # Fast NER: Entity Recognition Training Module
 
-> Simple is better than complexy
+> Simple is better than complex
 
 Fast ner is a python module designed to help you train your own named entity recognition (NER) model quickly and easily. With fast NER, you can customize model your NER model by providing your own list of named entities.
 
@@ -141,8 +141,6 @@ Create an instance of the Fast_NER class.
 
 
 ### Comunication
-
-+ [Github Page](github.com/fast_ner)
 
 + Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga) | kayengacampos@gmail.com
 
