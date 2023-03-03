@@ -80,7 +80,7 @@ Visualize the results of your model using the `show` method:
 
 ###### Here's the result:
 
-![EXAMPLE](screenshot.png)
+![EXAMPLE](Screenshot.png)
 
 
 
