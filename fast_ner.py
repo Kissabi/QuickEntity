@@ -9,6 +9,9 @@ from spacy import displacy
 class Fast_NER:
 
     """
+
+@Autor: Kayenga Campos - kayengacampos@gmail.com
+
  API Reference
 
 Fast_NER(language, phrase, save_model)
@@ -67,9 +70,8 @@ Help and Support
 
 Comunication
 
- [Github Page](github.com/fast_ner)
+ [Github Page](github.com/kissabi/kissabi/fast_ner)
 
- Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga) | kayengacampos@gmail.com
 
 
 License
@@ -78,7 +80,7 @@ This project is licensed under the [MIT License](https://opensourse.org/license/
 
     """
     
-    def __init__(self, language="en", phrase=None, save_model=False):
+    def __init__(self, language="en", phrase=None, save_model=True):
         if phrase is None:
             raise ValueError("phrase must be provided")
         global ent_list
@@ -113,4 +115,4 @@ This project is licensed under the [MIT License](https://opensourse.org/license/
         return doc
 
     def show(self):
-        displacy.render(doc, style="ent")
+        displacy.render(doc, style="ent", jupyter=True)
