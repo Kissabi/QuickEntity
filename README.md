@@ -48,7 +48,7 @@ The `language` parameter specifies the language of the text you want to train th
 
 Before training the model, you need to load entity list using the `read_json`
 
-`ent_list = ner.read_json("entities.json")`
+`ent_list = fn.read_json("entities.json")`
 
 The named entity list should be a JSON file with a dictionary of entities and their labels with prefix `B-`. Here's an example:
 
@@ -63,20 +63,20 @@ The named entity list should be a JSON file with a dictionary of entities and th
 
 Next, process your text data using the `process_text` method to obtain the list of words, spaces, and entity labels. Look how to do it:
 
-`model = ner.process_text(ent)`
+`model = fn.process_text(ent_list)`
 
 
 ### Training the dat
 
 Once you've processed your text data, you should train the model using the `train` method:
 
-`ner.train(model)`
+`fn.train(model)`
 
 ### Display the annotated text
 
 Visualize the results of your model using the `show` method:
 
-`ner.show()`
+`fn.show()`
 
 ###### Here's the result:
 
@@ -142,7 +142,7 @@ Create an instance of the Fast_NER class.
 
 ### Comunication
 
-+ Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga) | kayengacampos@gmail.com
++ Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga) | [Write Me](kayengacampos@gmail.com)
 
 
 ## License
