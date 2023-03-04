@@ -142,7 +142,8 @@ Create an instance of the Fast_NER class.
 
 ### Comunication
 
-+ Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga) | [Write Me](https://kayengacampos@gmail.com)
++ Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga)
++ Write Me - kayengacampos@gmail.com
 
 
 ## License
