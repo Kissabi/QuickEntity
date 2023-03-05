@@ -1,8 +1,8 @@
-# Fast NER: Entity Recognition Training Module
+# quick NER: Entity Recognition Training Module
 
 > Simple is better than complex
 
-Fast ner is a python module designed to help you train your own named entity recognition (NER) model quickly and easily. With fast NER, you can customize model your NER model by providing your own list of named entities.
+Quick NER is a python module designed to help you train your own Named Entity Recognition (NER) model quickly and easily. With quick NER, you can customize model your NER model by providing your own list of named entities.
 
 
 ##  Features
@@ -13,7 +13,7 @@ Fast ner is a python module designed to help you train your own named entity rec
 
 ## Dependencies
 
-fast_ner requires:
+Quick NER requires:
 
 + spacy (>= 3.5.0)
 + nltk (>=3.7)
@@ -22,25 +22,25 @@ fast_ner requires:
 
 ## Installation
 
-You can install Fast NER by runing the following command:
+You can install quick NER by runing the following command:
 
-`pip install fast-ner`
+`pip install quick-ner`
 
 ## Usage
 
 ### Setting Up
 
-To use Fast NER, you need to import the fast_ner module
+To use Quick NER, you need to import the Quick_NER module
 
-`from fast_ner import Fast_NER`
+`from quick_ner import Quick_NER`
 
-### Initialize the Fast_NER object
+### Initialize the Quick_NER object
 
-Then, you need to create an instance of the fast_ner class:
+Then, you need to create an instance of the Quick_NER class:
 
 `phrase = "Steve played a pivotal role in the development of Apple, the company responsible for creating innovative products such as the iPad"`
 
-`fn = Fast_NER(language="en", phrase=phrase, save_model=False)`
+`fn = Quick_NER(language="en", phrase=phrase, save_model=False)`
 
 The `language` parameter specifies the language of the text you want to train the model on (default is `"en"`). The `phrase` parameter is an exemple text phrase used to create a `Doc` object for training. The `save_model` parameter specifies whether to save the treined model to disk or not (default is True).
 
@@ -55,7 +55,7 @@ The named entity list should be a JSON file with a dictionary of entities and th
 `
 {
 "Apple":"B-ORG",
-"Steve":"B-Person",
+"Steve":"B-PERSON",
 "iPad":"B-PRODUCT"
 }
 `
@@ -80,21 +80,21 @@ Visualize the results of your model using the `show` method:
 
 ###### Here's the result:
 
-![EXAMPLE](Screenshot.png)
+![Example quick NER](https://github.com/Kissabi/quick_ner/raw/main/Screenshot.png)
 
 
 
 ## API Reference
 
-`Fast_NER(language, phrase, save_model)`
+`Quick_NER(language, phrase, save_model)`
 
-Create an instance of the Fast_NER class.
+Create an instance of the Quick_NER class.
 
 ### Parameters
 
 + `language` (string): Language for the NER model. Default is `"en"`.
 + `phrase` (string): Example text used for training.
-+ `save_model` (bool): Whether to save the treined model to disk. Default is `false`
++ `save_model` (bool): Whether to save the treined model to disk. Default is `True`
 
 ### Methods
 
@@ -142,8 +142,9 @@ Create an instance of the Fast_NER class.
 
 ### Comunication
 
++ [Github Page](github.com/kissabi/quick_ner)
+
 + Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga)
-+ Write Me - kayengacampos@gmail.com
 
 
 ## License
