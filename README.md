@@ -1,4 +1,4 @@
-# quick NER: Entity Recognition Training Module
+# Quick NER: Entity Recognition Training Module
 
 > Simple is better than complex
 
@@ -136,15 +136,6 @@ Create an instance of the Quick_NER class.
 #### Parameters
 + None.
 
-
-## Help and Support
-
-
-### Comunication
-
-+ [Github Page](github.com/kissabi/quick_ner)
-
-+ Kayenga Campos - [Linkedin](https://linkedin.com/in/kayenga)
 
 
 ## License
