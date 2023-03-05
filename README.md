@@ -13,7 +13,7 @@ Quick NER is a python module designed to help you train your own Named Entity Re
     + [Process a text with the loaded entities](#process-a-text-with-the-loaded-entities)
     + [Training the text data](#training-the-text-data)
     + [Display the annotated text](#display-the-annotated-text)
- * [API Reference](#api-reference]
+ * [API Reference](#api-reference)
       
 ## Install
 
