@@ -1,13 +1,13 @@
 
 import unittest
-from fast_ner import Fast_NER
+from quick_ner import Quick_NER
 
-class TestFastNER(unittest.TestCase):
+class TestQuickNER(unittest.TestCase):
 
     def test_save_model_false(self):
         # Define a phrase and set save_model to False
         phrase = "Steve played a pivotal role in the development of Apple."
-        ner = Fast_NER(phrase=phrase, save_model=False)
+        ner = Quick_NER(phrase=phrase, save_model=False)
 
         # Load entities file in json format
         ent = ner.read_json("ent_list.json")

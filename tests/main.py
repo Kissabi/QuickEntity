@@ -1,14 +1,13 @@
-
 import unittest
 import os
-from fast_ner import Fast_NER
+from quick_ner import Quick_NER
 
-class TestFastNER(unittest.TestCase):
+class TestQuickNER(unittest.TestCase):
 
     def setUp(self):
         self.words = "Steve played a pivotal role in the development of Apple, the company responsible for creating innovative products such as the iPad."
         self.ent_list = {'Steve': 'B-PERSON', 'Apple': 'B-ORG','iPad': 'B-PRODUCT'}
-        self.ner = Fast_NER(language="en",phrase=self.words, save_model=True)
+        self.ner = Quick_NER(language="en",phrase=self.words, save_model=True)
 
     def test_read_json(self):
         ent = self.ner.read_json("ent_list.json")
