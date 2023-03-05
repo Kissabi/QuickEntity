@@ -2,8 +2,6 @@
 
 > Simple is better than complex
 
-Quick NER is a python module designed to help you train your own Named Entity Recognition (NER) model quickly and easily. With quick NER, you can customize model your NER model by providing your own list of named entities.
-
 * [Install](#install)
 * [Features](#features)
 * [Dependencies](#dependencies)
@@ -14,7 +12,9 @@ Quick NER is a python module designed to help you train your own Named Entity Re
     + [Training the text data](#training-the-text-data)
     + [Display the annotated text](#display-the-annotated-text)
  * [API Reference](#api-reference)
-      
+ 
+Quick NER is a python module designed to help you train your own Named Entity Recognition (NER) model quickly and easily. With quick NER, you can customize model your NER model by providing your own list of named entities.
+
 ## Install
 
 You can install quick NER by runing the following command:
