@@ -1,6 +1,8 @@
-# Quick NER: Entity Recognition Training Module
+# QuickEntity: Named Entity Recognition Training Module on Spacy-Based
 
 > Simple is better than complex
+
+QuickEntity is a python module designed to help you train your own Named Entity Recognition (NER) model quickly and easily. With quick NER, you can customize model your NER model by providing your own list of named entities.
 
 * [Install](#install)
 * [Features](#features)
@@ -13,7 +15,6 @@
     + [Display the annotated text](#display-the-annotated-text)
  * [API Reference](#api-reference)
  
-Quick NER is a python module designed to help you train your own Named Entity Recognition (NER) model quickly and easily. With quick NER, you can customize model your NER model by providing your own list of named entities.
 
 ## Install
 
@@ -30,7 +31,7 @@ pip install quick-ner
 
 ## Dependencies
 
-Quick NER requires:
+QuickEntity requires:
 
 + spacy (>= 3.5.0)
 + nltk (>=3.7)
@@ -40,10 +41,10 @@ Quick NER requires:
 
 ### Setting Up
 
-To use Quick NER, you need to import the Quick_NER module
+To use QuickEntity, you need to import the QuickEntity module
 
 ```python
-from quick_ner import Quick_NER
+from quickentity import QuickEntity
 ```
 
 #### Initialize the `Quick_NER` object
@@ -55,7 +56,7 @@ phrase = "Steve played a pivotal role in the development of Apple, the company r
 ```
 
 ```python
-fn = Quick_NER(language="en", phrase=phrase, save_model=False)
+QE = QuickEntity(language="en", phrase=phrase, save_model=False)
 ```
 
 The `language` parameter specifies the language of the text you want to train the model on (default is `"en"`). The `phrase` parameter is an exemple text phrase used to create a `Doc` object for training. The `save_model` parameter specifies whether to save the treined model to disk or not (default is True).
@@ -64,7 +65,7 @@ The `language` parameter specifies the language of the text you want to train th
 
 Before training the model, you need to load entity list using the `read_json`
 ```python
-ent_list = fn.read_json("entities.json")
+ent_list = QE.read_json("entities.json")
 ```
 
 The named entity list should be a JSON file with a dictionary of entities and their labels with prefix `B-`. Here's an example:
@@ -81,7 +82,7 @@ The named entity list should be a JSON file with a dictionary of entities and th
 
 Next, process your text data using the `process_text` method to obtain the list of words, spaces, and entity labels. Look how to do it:
 ```python
-model = fn.process_text(ent_list)
+model = QE.process_text(ent_list)
 ```
 
 
@@ -90,7 +91,7 @@ model = fn.process_text(ent_list)
 Once you've processed your text data, you should train the model using the `train` method:
 
 ```python
-fn.train(model)
+QE.train(model)
 ```
 
 ### Display the annotated text
@@ -98,18 +99,18 @@ fn.train(model)
 Visualize the results of your model using the `show` method:
 
 ```python
-fn.show()
+QE.show()
 ```
 
 ###### Here's the result:
 
-![Example quick NER](https://github.com/Kissabi/quick_ner/raw/main/Screenshot.png)
+![Example quickentiy](https://github.com/Kissabi/quick_ner/raw/main/Screenshot.png)
 
 
 
 ## API Reference
 
-`Quick_NER(language, phrase, save_model)`
+`QuickEntity(language, phrase, save_model)`
 
 Create an instance of the Quick_NER class.
 
