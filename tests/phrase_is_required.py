@@ -1,7 +1,7 @@
 import unittest
-from quick_ner import Quick_NER
+from quickentity import QuickEntity
 
-class TestQuickNER(unittest.TestCase):
+class TestQuickEntity(unittest.TestCase):
     
     def test_phrase_is_required(self):
         with self.assertRaises(TypeError):
