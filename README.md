@@ -123,7 +123,8 @@ QE.train(model)
 # file ./train.spacy saved on disk
 
 # view in a jupyter-based notebook.
-QE.show()```
+QE.show()
+```
 
 
 ###### Here's the result:
