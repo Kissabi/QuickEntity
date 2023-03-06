@@ -18,9 +18,9 @@ QuickEntity is a python module designed to help you train your own Named Entity 
 
 ## Install
 
-You can install quick NER by runing the following command:
+You can install QuickEntity by runing the following command:
 ```bash
-pip install quick-ner
+pip install quickentity
 ```
 
 ##  Features
