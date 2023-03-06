@@ -115,9 +115,12 @@ nltk.download('punkt')
 
 from quickentity import QuickEntity
 
-words = "Steve played a pivotal role in the development of Apple, the company responsible for creating innovative products such as the iPad."
+words = """ Steve played a pivotal role in the development of Apple, 
+the company responsible for creating innovative products such as the iPad."""
 
-# config the Quick_NER, phrase is requerid,language is "en" by default, save_model is false by default.
+# config the QuickEntity, phrase is required
+#language is "en" by default, 
+#save_model is false by default.
 QE = QuickEntity(language="en",phrase=words, save_model=True)
 
 #load entities file in json format
