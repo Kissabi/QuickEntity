@@ -1,4 +1,4 @@
-# QuickEntity: Named Entity Recognition Training Module on Spacy-Based
+# QuickEntity: Named Entity Recognition Training Module
 
 > Simple is better than complex
 
