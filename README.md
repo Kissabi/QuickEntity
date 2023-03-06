@@ -104,6 +104,15 @@ QE.show()
 ### Complete example:
 
 ```python
+
+'''
+1- install:
+pip install quickentity
+2- punkt package from nltk is required to tokenization:
+import nltk
+nltk.download('punkt')
+'''
+
 from quickentity import QuickEntity
 
 words = "Steve played a pivotal role in the development of Apple, the company responsible for creating innovative products such as the iPad."
