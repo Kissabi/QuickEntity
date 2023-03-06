@@ -139,7 +139,7 @@ QE.show()
 ```
 
 
-###### Here's the result:
+###### Here's the output:
 
 ![Example quickentiy](https://github.com/Kissabi/quick_ner/raw/main/Screenshot.png)
 
