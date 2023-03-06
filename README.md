@@ -101,7 +101,7 @@ Visualize the results of your model using the `show` method:
 ```python
 QE.show()
 ```
-### Complete example:
+### Full Example:
 
 ```python
 
