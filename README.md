@@ -120,7 +120,7 @@ the company responsible for creating innovative products such as the iPad."""
 
 # config the QuickEntity, phrase is required
 #language is "en" by default, 
-#save_model is false by default.
+#save_model is true by default.
 QE = QuickEntity(language="en",phrase=words, save_model=True)
 
 #load entities file in json format
